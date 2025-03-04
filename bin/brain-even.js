@@ -3,6 +3,8 @@ import Random, { nativeMath } from 'random-js';
 import readlineSync from 'readline-sync';
 import { askingName } from '../index.js';
 
+console.log('Welcome to the Brain Games!');
+
 const username = askingName();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -13,7 +15,7 @@ let trueness;
 let correctAnswer;
 
 while (i < 3) {
-  console.log(`Question:${randomNumber}`);
+  console.log(`Question: ${randomNumber}`);
   const answer = readlineSync.question('Your answer: ');
   const isEven = randomNumber % 2 === 0;
   switch (answer) {
@@ -31,6 +33,7 @@ while (i < 3) {
     console.log('Correct!');
   } else if (isEven !== trueness) {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+    console.log(`Let's try again, ${username}!`);
     break;
   }
   i += 1;
