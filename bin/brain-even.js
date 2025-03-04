@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 import Random, { nativeMath } from 'random-js';
 import readlineSync from 'readline-sync';
+import { askingName } from '../index.js';
+
+const username = askingName();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -32,5 +35,5 @@ while (i < 3) {
   }
   i += 1;
   randomNumber = Random.integer(1, 50)(nativeMath);
-  if (i === 3) { console.log('Congratulations, Bill!'); }
+  if (i === 3) { console.log(`Congratulations, ${username}!`); }
 }
