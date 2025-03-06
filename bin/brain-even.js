@@ -38,5 +38,7 @@ while (i < 3) {
   }
   i += 1;
   randomNumber = Random.integer(1, 50)(nativeMath);
-  if (i === 3) { console.log(`Congratulations, ${username}!`); }
+  if (i === 3) {
+    console.log(`Congratulations, ${username}!`);
+  }
 }
