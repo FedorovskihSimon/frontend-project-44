@@ -15,7 +15,6 @@
     "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
-    "make": "^0.0.0",
     "random-js": "^2.1.0",
     "readline-sync": "^1.4.10"
   },
