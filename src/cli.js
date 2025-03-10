@@ -20,11 +20,9 @@ export const getRandomValue = (array) => {
   return array[randomElement];
 };
 
-export const gcd = (firstNum, secondNum) => {
-  const min = Math.min(firstNum, secondNum);
-  const max = Math.max(firstNum, secondNum);
-  if (max % min === 0) {
-    return min;
-  }
-  return max % min / min
+export const gcd = (a, b) => {
+    if (!b) {
+      return a;
+    }
+    return gcd(b, a % b);
 }

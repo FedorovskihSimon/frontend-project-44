@@ -4,9 +4,7 @@ import readlineSync from 'readline-sync';
 import { askingName } from '../index.js';
 
 console.log('Welcome to the Brain Games!');
-
 const username = askingName();
-
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 let randomNumber = Random.integer(1, 50)(nativeMath);
