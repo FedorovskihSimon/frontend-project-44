@@ -21,12 +21,19 @@ export const getRandomValue = (array) => {
 };
 
 export const gcd = (a, b) => {
-    if (!b) {
-      return a;
-    }
-    return gcd(b, a % b);
-}
+  if (!b) {
+    return a;
+  }
+  return gcd(b, a % b);
+};
 
-export const getRandomProgression = () => {
-  
-}
+export const getRandomProgression = (start, length, step) => {
+  let i = 0;
+  const progression = [];
+  while (i < length) {
+    progression.push(start);
+    start += step;
+    i += 1;
+  }
+  return progression;
+};

@@ -4,7 +4,7 @@ import { askingName, getRandomValue, getRandomInt } from '../index.js';
 
 console.log('Welcome to the Brain Games!');
 const array = ['*', '-', '+'];
-const username = askingName()
+const username = askingName();
 let i = 0;
 let randomExpression = `${getRandomInt(1, 50)} ${getRandomValue(array)} ${getRandomInt(1, 50)}`;
 const correctAnswer = eval(randomExpression);
