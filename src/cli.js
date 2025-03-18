@@ -29,10 +29,11 @@ export const gcd = (a, b) => {
 
 export const getRandomProgression = (start, length, step) => {
   let i = 0;
+  let progressionStepValue = start;
   const progression = [];
   while (i < length) {
-    progression.push(start);
-    start += step;
+    progression.push(progressionStepValue);
+    progressionStepValue += step;
     i += 1;
   }
   return progression;
