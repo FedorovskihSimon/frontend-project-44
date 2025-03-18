@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import { askingName, getRandomValue, getRandomInt } from '../index.js';
 
 console.log('Welcome to the Brain Games!');
+console.log('What is the result of the expression?');
 const array = ['*', '-', '+'];
 const username = askingName();
 let i = 0;
