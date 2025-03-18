@@ -33,6 +33,7 @@ export default [
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
       'no-console': 'off',
+      'no-eval': 'off',
       'import/no-extraneous-dependencies': 'off',
     },
   },
