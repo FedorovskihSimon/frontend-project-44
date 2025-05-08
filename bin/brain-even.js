@@ -15,7 +15,7 @@ while (i < 3) {
   console.log(`Question: ${randomNumber}`);
   const answer = readlineSync.question('Your answer: ');
   const isEven = randomNumber % 2 === 0;
-  // eslint-disable-next-line default-case
+  
   switch (answer) {
     case 'yes':
       trueness = true;
