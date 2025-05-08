@@ -16,7 +16,6 @@ while (i < 3) {
   const answer = readlineSync.question('Your answer: ');
   const isPrimeNumber = isPrime(randomNum);
 
-  // eslint-disable-next-line default-case
   switch (answer) {
     case 'yes':
       trueness = true;
