@@ -37,7 +37,7 @@ while (i < 3) {
 
   console.log('Correct!');
   i += 1;
-  randomValue = getrandomValue(array);
+  randomValue = getRandomValue(array);
   randomInt1 = getRandomInt(1, 50);
   randomInt2 = getRandomInt(1, 50);
   randomExpression = `${randomInt1} ${randomValue} ${randomInt2}`;
