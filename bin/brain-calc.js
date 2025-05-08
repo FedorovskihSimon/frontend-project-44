@@ -6,7 +6,7 @@ console.log('Welcome to the Brain Games!');
 console.log('What is the result of the expression?');
 const array = ['*', '-', '+'];
 const username = askingName();
-let randomValue = getrandomValue(array);
+let randomValue = getRandomValue(array);
 let randomInt1 = getRandomInt(1, 50);
 let randomInt2 = getRandomInt(1, 50);
 let i = 0;
