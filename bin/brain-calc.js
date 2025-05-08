@@ -6,11 +6,26 @@ console.log('Welcome to the Brain Games!');
 console.log('What is the result of the expression?');
 const array = ['*', '-', '+'];
 const username = askingName();
+let randomValue = getrandomValue(array);
+let randomInt1 = getRandomInt(1, 50);
+let randomInt2 = getRandomInt(1, 50);
 let i = 0;
-let randomExpression = `${getRandomInt(1, 50)} ${getRandomValue(array)} ${getRandomInt(1, 50)}`;
-const correctAnswer = eval(randomExpression);
+let randomExpression = `${randomInt1} ${randomValue} ${randomInt2}`;
+let correctAnswer;
 
 while (i < 3) {
+  switch (randomValue) {
+    case '*':
+      correctAnswer = randomInt1 * randomInt2;
+      break;
+    case '+': 
+      correctAnswer = randomInt1 + randomInt2;
+      break;
+    case '-': 
+      correctAnswer = randomInt1 - randomInt2;
+      break;
+  }
+  
   console.log(`Question: ${randomExpression}`);
   const answer = readlineSync.question('Your answer: ');
 
@@ -22,7 +37,10 @@ while (i < 3) {
 
   console.log('Correct!');
   i += 1;
-  randomExpression = `${getRandomInt(1, 50)} ${getRandomValue(array)} ${getRandomInt(1, 50)}`;
+  randomValue = getrandomValue(array);
+  randomInt1 = getRandomInt(1, 50);
+  randomInt2 = getRandomInt(1, 50);
+  randomExpression = `${randomInt1} ${randomValue} ${randomInt2}`;
 
   if (i === 3) {
     console.log(`Congratulations, ${username}!`);
