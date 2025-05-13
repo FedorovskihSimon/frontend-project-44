@@ -15,7 +15,7 @@ while (i < 3) {
   console.log(`Question: ${randomNumber}`);
   const answer = readlineSync.question('Your answer: ');
   const isEven = randomNumber % 2 === 0;
-  
+
   switch (answer) {
     case 'yes':
       trueness = true;
@@ -25,6 +25,8 @@ while (i < 3) {
       trueness = false;
       correctAnswer = 'yes';
       break;
+    default:
+      correctAnswer = 'no';
   }
   if (isEven === trueness) {
     console.log('Correct!');

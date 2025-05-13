@@ -25,6 +25,9 @@ while (i < 3) {
       trueness = false;
       correctAnswer = 'yes';
       break;
+
+    default:
+      correctAnswer = 'no';
   }
 
   if (trueness !== isPrimeNumber) {

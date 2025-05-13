@@ -18,14 +18,15 @@ while (i < 3) {
     case '*':
       correctAnswer = randomInt1 * randomInt2;
       break;
-    case '+': 
+    case '+':
       correctAnswer = randomInt1 + randomInt2;
       break;
-    case '-': 
+    case '-':
       correctAnswer = randomInt1 - randomInt2;
       break;
+    default:
   }
-  
+
   console.log(`Question: ${randomExpression}`);
   const answer = readlineSync.question('Your answer: ');
 
