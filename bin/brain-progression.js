@@ -19,7 +19,7 @@ while (i < 3) {
   if (Number(answer) !== hiddenNumber) {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${hiddenNumber}'.`)
     console.log(`Let's try again, ${username}!`)
-    break;
+    break
   }
   console.log('Correct!')
 

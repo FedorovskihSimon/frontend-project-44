@@ -37,7 +37,7 @@ while (i < 3) {
   }
   console.log('Correct!')
 
-  i += 1;
+  i += 1
   randomNum = getRandomInt(3, 20)
   if (i === 3) {
     console.log(`Congratulations, ${username}!`)
